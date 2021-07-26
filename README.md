@@ -16,12 +16,12 @@
 
 1.  拉取项目到本地
 2.  使用idea，open打开，等待pom中依赖包的下载
-3.  打开https://www.tianqiapi.com/index/doc?version=v6，本次天气调用使用的是此天气实况接口，使用需要邮箱注册
+3.  打开[天气API](https://www.tianqiapi.com/index/doc?version=v6)，本次天气调用使用的是此天气实况接口，使用需要邮箱注册
 4.  注册完成之后，进入个人中心，把appid和appsecret，填写到配置文件weathermail.properties中
-5.  打开https://gitee.com/wangjins/weather_api，city.json，搜索你的城市id，填写到weathermail.properties中
+5.  打开[city.json](https://gitee.com/wangjins/weather_api)，去city.json中搜索你的城市id，填写到weathermail.properties中
 6.  weathermail.properties中的”to“配置为你的接收天气邮件信息的邮箱
 7.  在resources的config目录下，配置mail.setting文件，这个邮箱是你发送天气邮件信息的邮箱，需要配置邮箱地址和授权码，授权码获取教程自行Google
-8.  启动WeatherMailApplication，访问http://localhost:8050/hello/11，返回hello, world!代表启动完成
+8.  启动WeatherMailApplication，访问[http://localhost:8050/hello/11](http://localhost:8050/hello/11)，返回hello,world!代表启动完成
 9.  可以在test/java/com/hc/weathermail包下找到测试类，自行测试配置文件和获取天气api是否可以正常使用
 9.  【推荐】本地测试无问题后，将项目打jar包，放在服务器上，然后可以安心工作，下班就会有邮件提醒到邮箱了！
 
